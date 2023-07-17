@@ -30,6 +30,7 @@ header{
     align-items: center;
     top: 0;
     position: sticky;
+    z-index: 1;
 }
 
 header img{
@@ -66,7 +67,7 @@ header ul li a:hover{
 .top-home{
     background-image: url("top-home_copy.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -74,6 +75,7 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     padding: 19% 0;
+    filter: contrast(110%);
 }
 
 .top-home img{
