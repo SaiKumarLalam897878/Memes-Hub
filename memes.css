@@ -13,6 +13,11 @@
     src: url("Jost-Medium-BF63dc52d2d8452.ttf");
 }
 
+@font-face {
+    font-family: bonfire;
+    src: url("bonfire.ttf");
+}
+
 *{
     box-sizing: border-box;
 }
@@ -20,6 +25,11 @@
 body{
     margin: 0;
     padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    user-select: none;
 }
 
 header{
@@ -55,13 +65,17 @@ header ul li a{
     color: #f9c004;
     transition: color 0.3s;
 }
-/* 
+
 header ul li .active{
     color: #fff;
-} */
+}
 
 header ul li a:hover{
     color: #bd2323;
+}
+
+header ul li a:focus{
+    color: #fff;
 }
 
 .top-home{
@@ -72,6 +86,7 @@ header ul li a:hover{
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 19% 0;
@@ -80,4 +95,16 @@ header ul li a:hover{
 
 .top-home img{
     width: 23%;
+}
+
+.top-home p{
+    font-family: bonfire;
+    color: #f9c004;
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 650px){
+    .top-home p{
+        font-size: 1rem;
+    }
 }
