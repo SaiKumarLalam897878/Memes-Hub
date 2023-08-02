@@ -59,15 +59,41 @@
   
   textarea {
     resize: none; }
+  .btn{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    height: 3.5rem;
+    border-radius: .6rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .primary__heading{
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: rgb(1, 13, 20);
+  }
+  .primary__paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(1, 13, 20);
+    font-family: "Poppins", sans-serif;
+  }
+  .fas{
+    font-size: 3rem;
+  }
+  .sec_pad{
+    padding: 10rem;
+  }
   
 header{
     background-color: transparent;
     position: fixed;
     width: 100%;
     transition: all 0.3s ease-in-out;
-    z-index: 1; }
+    z-index: 100; }
     .show__background{
-        background-image: linear-gradient(to right, black, black, black, rgba(58, 2, 2, 0.8), black, black, black);
+        background-color: #000;
         box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
     .header__logo{
         width: 7rem;
@@ -101,16 +127,15 @@ header{
                 transition: color 0.3s;
                 letter-spacing: .2rem;
                 padding: 2rem 3.5rem;
-                font-size: 1.8rem;
+                font-size: 1.65rem;
                 text-shadow: 0 10px 10px black; }
                 @media only screen and (max-width: 37.5em) {
                     header ul li a{
-                        font-size: 1.35rem; } }
+                        font-size: 1.3rem; } }
             header ul li a:hover{
                 color: #bd2323; }
             header ul li a:focus{
                 color: #fff; }
-
 
 .top-home{
     background-image: url("../images/jpg/top-home_copy.jpg");
@@ -118,8 +143,17 @@ header{
     filter: blur(2px) contrast(110%) brightness(70%);
     background-size: cover;
     background-position: center;
+    z-index: -1;
     height: 100%;
     width: 100%; }
+    .top-home__forground{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        background-position: center;
+        position: absolute;
+    }
     .home__logo{
         display: flex;
         flex-direction: column;
@@ -140,3 +174,38 @@ header{
             color: #f9c004;
             font-size: 1.3rem;
             margin-top: .6rem; }
+        .btn__group{
+            display: flex;
+            align-items: center;
+            margin-top: 3rem; }
+            .btn__large{
+                width: 15rem; }
+                .btn__warning{
+                    background-color: #f9c004;
+                    margin-right: 2rem;
+                    color: #000 }
+                .btn__outline{
+                    background-color: transparent;
+                    border: 2px solid #fff; }
+
+.services__section{
+    background-image: linear-gradient(120deg, #f9c004 60%, #000 40%);
+}
+    .services{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; }
+        .service__card{
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 25rem;
+            height: 25rem;
+            border-radius: .2rem;
+            box-shadow: 0 10px 50px  rgba(0, 0, 0, 0.2);
+            background-color: #fff; }
+            .service__card:nth-child(4){
+                background-color: #f9c004;
+            }
