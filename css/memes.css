@@ -1,0 +1,144 @@
+@font-face {
+    font-family: clash;
+    src: url("../fonts/ClashDisplay-Light.otf");
+}
+
+@font-face {
+    font-family: pilcrow;
+    src: url("../fonts/PilcrowRounded-Medium.otf");
+}
+
+@font-face {
+    font-family: jost;
+    src: url("../fonts/Jost-Medium-BF63dc52d2d8452.ttf");
+}
+
+@font-face {
+    font-family: bonfire;
+    src: url("../fonts/bonfire.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit; }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; }
+    @media only screen and (max-width: 75em) {
+      html {
+        font-size: 57.5%; } }
+    @media only screen and (min-width: 112.5em) {
+      html {
+        font-size: 65%; } }
+  
+  body {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; }
+  
+  li {
+    list-style: none; }
+  
+  input:focus,
+  button:focus,
+  a:focus,
+  textarea:focus {
+    outline: none; }
+  
+  button {
+    border: none;
+    cursor: pointer; }
+  
+  textarea {
+    resize: none; }
+  
+header{
+    background-color: transparent;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 1; }
+    .header__logo{
+        width: 7rem;
+        height: 4rem;
+        cursor:pointer;
+        filter: drop-shadow(0 10px 10px black) }
+        @media only screen and (max-width: 56.25em) {
+            .header__logo{
+                width: 6rem;
+                height: 3.5rem;
+            }
+        }
+        @media only screen and (max-width: 37.5em) {
+            .header__logo{
+                width: 5rem;
+                height: 2.8rem;
+            }
+        }
+    header ul{
+        padding: 2rem 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media only screen and (max-width: 56.25em) {
+            header ul{
+              padding: 2.2rem 2rem; } }
+        header ul li{
+            padding: 0 4rem;
+            font-family: "Bebas Neue", sans-serif;
+            text-transform: uppercase; }
+            header ul li a{
+                color: #f9c004;
+                transition: color 0.3s;
+                letter-spacing: .2rem;
+                font-size: 1.8rem;
+                text-shadow: 0 10px 10px black; }
+                @media only screen and (max-width: 37.5em) {
+                    header ul li a{
+                        font-size: 1.35rem;
+                    } }
+            header ul li a:hover{
+                color: #bd2323; }
+            header ul li a:focus{
+                color: #fff; }
+
+.top-home{
+    background-image: url("../images/jpg/top-home_copy.jpg");
+    top: 0;
+    position: absolute;
+    filter: blur(2px) contrast(110%) brightness(73%);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1; }
+    .home__logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh; }
+        .home__logo img{
+            width: 23%;
+            filter: brightness(95%) drop-shadow(0 10px 10px black); }
+            @media only screen and (max-width: 56.25em) {
+                .home__logo img{
+                    width: 27%;
+                } }
+                @media only screen and (max-width: 37.5em) {
+                    .home__logo img {
+                      width: 33%; } }
+        .home__logo p{
+            font-family: bonfire;
+            color: #f9c004;
+            font-size: 1.3rem;
+            margin-top: .6rem; }
