@@ -85,6 +85,20 @@
   .sec_pad{
     padding: 10rem;
   }
+  .section__heading{
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: rgb(1, 13, 20);
+      letter-spacing: 2px;
+  }
+  .section__tagline{
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(1, 13, 20);
+    border-bottom: 2px solid rgb(1, 13, 20);
+    margin-bottom: 1rem;
+  }
   
 header{
     background-color: transparent;
@@ -125,7 +139,7 @@ header{
             header ul li a{
                 color: #f9c004;
                 transition: color 0.3s;
-                letter-spacing: .2rem;
+                letter-spacing: 2px;
                 padding: 2rem 3.5rem;
                 font-size: 1.65rem;
                 text-shadow: 0 10px 10px black; }
@@ -144,13 +158,13 @@ header{
     background-size: cover;
     background-position: center;
     z-index: -1;
-    height: 100%;
+    height: 100vh;
     width: 100%; }
     .top-home__forground{
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
         width: 100%;
         z-index: -1;
-        height: 100%;
+        height: 100vh;
         background-position: center;
         position: absolute;
     }
@@ -186,11 +200,11 @@ header{
                     color: #000 }
                 .btn__outline{
                     background-color: transparent;
-                    border: 2px solid #fff; }
+                    border: 2px solid #fff; 
+                }
 
 .services__section{
-    background-image: linear-gradient(120deg, #f9c004 60%, #000 40%);
-}
+    background-image: linear-gradient(120deg, #f9c004 60%, #000 40%); }
     .services{
         display: flex;
         justify-content: space-around;
@@ -209,3 +223,36 @@ header{
             .service__card:nth-child(4){
                 background-color: #f9c004;
             }
+
+.about__section-part{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem; }
+  .about__images{
+    display: flex;
+    flex-wrap: wrap; }
+    .about__image-container{
+        width: 30rem;
+        height: 30rem;
+        margin: 0 1rem 1rem 0;
+        overflow: hidden; }
+        .about__image-container img{
+          object-fit: cover;
+          width: 100%;
+          transition: all 1s;
+          height: 100%; }
+        .about__image-container:nth-child(3){
+          margin-left: 5rem;
+          width: 25rem;
+          height: 25rem; }
+        .about__image-container:nth-child(2){
+          margin-top: 5rem;
+          width: 25rem;
+          height: 25rem; }
+          .about__image-container img:hover{
+            transform: scale(1.2);
+          }
+
+
