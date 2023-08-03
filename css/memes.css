@@ -190,10 +190,6 @@ header{
             gap: 2rem; }
             .btn__large{
                 width: 15rem; }
-                @media only screen and (max-width:37.5em) {
-                  .btn__large{
-                    width: 10rem;
-                    font-size: 1rem;} }
                 .btn__warning{
                     background-color: #f9c004;
                     color: #000 }
