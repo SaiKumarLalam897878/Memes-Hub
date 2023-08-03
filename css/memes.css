@@ -18,6 +18,8 @@
     src: url("../fonts/bonfire.ttf");
 }
 
+::after,
+::before,
 *{
     margin: 0;
     padding: 0;
@@ -36,6 +38,7 @@
   
   body {
     box-sizing: border-box;
+    position: relative;
     line-height: 1.5;
     font-family: 'Bebas Neue', sans-serif;
   }
