@@ -23,7 +23,7 @@
     padding: 0;
     box-sizing: inherit;
     font-family: inherit; }
-  
+
   html {
     font-size: 62.5%;
     scroll-behavior: smooth; }
@@ -83,7 +83,7 @@
     font-size: 3rem;
   }
   .sec_pad{
-    padding: 10rem;
+    padding: 10rem 7rem;
   }
   .section__heading{
       font-size: 3.2rem;
@@ -151,38 +151,30 @@ header{
             header ul li a:focus{
                 color: #fff; }
 
-.top-home{
-    background-image: url("../images/jpg/top-home_copy.jpg");
-    position: absolute;
-    filter: blur(2px) contrast(110%) brightness(70%);
+.home__section{
+    background-image: url("../images/jpg/home-image.jpg");
     background-size: cover;
     background-position: center;
-    z-index: -1;
-    height: 100vh;
     width: 100%; }
-    .top-home__forground{
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
-        width: 100%;
-        z-index: -1;
-        height: 100vh;
-        background-position: center;
-        position: absolute;
-    }
     .home__logo{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        height: 100vh; }
+        padding: 25rem 0;
+        align-items: center; }
         .home__logo img{
             width: 23%;
             filter: brightness(95%) drop-shadow(0 10px 10px black); }
             @media only screen and (max-width: 56.25em) {
                 .home__logo img{
-                    width: 27%; } }
+                    width: 27%; }
+                .home__logo{
+                  padding: 18rem 0;} }
                 @media only screen and (max-width: 37.5em) {
                     .home__logo img {
-                      width: 33%; } }
+                      width: 30%; }
+                    .home__logo{
+                      padding: 10rem 0;} }
         .home__logo p{
             font-family: bonfire;
             color: #f9c004;
@@ -191,12 +183,16 @@ header{
         .btn__group{
             display: flex;
             align-items: center;
-            margin-top: 3rem; }
+            margin-top: 3rem;
+            gap: 2rem; }
             .btn__large{
                 width: 15rem; }
+                @media only screen and (max-width:37.5em) {
+                  .btn__large{
+                    width: 10rem;
+                    font-size: 1rem;} }
                 .btn__warning{
                     background-color: #f9c004;
-                    margin-right: 2rem;
                     color: #000 }
                 .btn__outline{
                     background-color: transparent;
@@ -204,12 +200,20 @@ header{
                 }
 
 .services__section{
-    background-image: linear-gradient(120deg, #f9c004 60%, #000 40%); }
+    background-image: linear-gradient(120deg, #f9c004 60%, #000 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;}
     .services{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap; }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2rem; }
+        @media only screen and (max-width: 66.75em) {
+          .services{
+            grid-template-columns: 1fr 1fr;}}
+        @media only screen and (max-width: 37.5em) {
+          .services{
+            grid-template-columns: 1fr;} }
         .service__card{
             padding: 2rem;
             display: flex;
@@ -221,38 +225,80 @@ header{
             box-shadow: 0 10px 50px  rgba(0, 0, 0, 0.2);
             background-color: #fff; }
             .service__card:nth-child(4){
-                background-color: #f9c004;
-            }
+                background-color: #f9c004; }
+            .food__truck-div{
+              overflow: hidden;
+              width: 40%; }
+              .food__truck{
+                left: 0;
+                position: relative;
+                animation: truck 3s infinite; }
+                @keyframes truck {
+                  0%{
+                    left: -40%;}
+                  100%{
+                    left: 120%;} }
 
-.about__section-part{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 1rem; }
-  .about__images{
-    display: flex;
-    flex-wrap: wrap; }
-    .about__image-container{
-        width: 30rem;
-        height: 30rem;
-        margin: 0 1rem 1rem 0;
-        overflow: hidden; }
-        .about__image-container img{
-          object-fit: cover;
-          width: 100%;
-          transition: all 1s;
-          height: 100%; }
-        .about__image-container:nth-child(3){
-          margin-left: 5rem;
-          width: 25rem;
-          height: 25rem; }
-        .about__image-container:nth-child(2){
-          margin-top: 5rem;
-          width: 25rem;
-          height: 25rem; }
-          .about__image-container img:hover{
-            transform: scale(1.2);
-          }
+.about__section{
+  background: #f4f4f4;}
+  .about__section-part{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem; }
+  @media only screen and (max-width: 85em) {
+    .about__section-part{
+      grid-template-columns: 1fr;} }
+    .about__images{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 61.2rem; }
+      @media only screen and (max-width: 85em) {
+        .about__images{
+          order: 1;
+          margin-top: 3rem; }}
+      .about__image-container{
+          width: 30rem;
+          height: 30rem;
+          overflow: hidden; }
+          .about__image-container img{
+            object-fit: cover;
+            width: 100%;
+            transition: all 1s;
+            height: 100%; }
+          .about__image-container:nth-child(3){
+            margin-left: 5rem;
+            width: 25rem;
+            height: 25rem; }
+          .about__image-container:nth-child(2){
+            margin-top: 5rem;
+            width: 25rem;
+            height: 25rem; }
+          @media only screen and (max-width: 56.75em) {
+            .about__images{
+              width: 51.2rem;}
+            .about__image-container{
+              width: 25em;
+              height: 25em; }
+             .about__image-container:is(:nth-child(2), :nth-child(3)){
+              width: 20em;
+              height: 20em;} }
+          @media only screen and (max-width: 40.5em) {
+            .about__images{
+              width: 100%; }
+            .about__image-container{
+              width: 100%;
+              height: 30rem; }
+            .about__image-container:is(:nth-child(2), :nth-child(3)){
+              width: 100%;
+              height: 30rem;
+              margin: 0; }}
+            .about__image-container img:hover{
+              transform: scale(1.2);}
+      .about__content{
+        width: min(90%, 80rem);
+      }
 
 
