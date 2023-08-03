@@ -276,11 +276,11 @@ header{
             .about__images{
               width: 51.2rem;}
             .about__image-container{
-              width: 25em;
-              height: 25em; }
+              width: 25rem;
+              height: 25rem; }
              .about__image-container:is(:nth-child(2), :nth-child(3)){
-              width: 20em;
-              height: 20em;} }
+              width: 20rem;
+              height: 20rem;} }
           @media only screen and (max-width: 40.5em) {
             .about__images{
               width: 100%; }
