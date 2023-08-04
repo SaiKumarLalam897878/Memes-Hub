@@ -143,26 +143,26 @@ header{
                 @media only screen and (max-width: 37.5em) {
                   .header__logo-list{
                     display: none;} }
-    header ul{
+    .header__links{
         display: flex;
         justify-content: space-evenly;
         width: min(90%, 120rem);
         align-items: center; }
-        header ul li{
+        .header__links li{
             font-family: "Bebas Neue", sans-serif;
             padding: 2.5rem 0;
             text-transform: uppercase; }
             .header__logo-list,
             .header__logo-a{
               padding: 0; }
-            header ul li a{
+            .header__links li a{
                 color: #f9c004;
                 transition: color 0.3s;
                 letter-spacing: 2px;
                 padding: 2.5rem 0;
                 font-size: 1.6rem;
                 text-shadow: 0 10px 10px black; }
-            header ul li a:is(:hover, :focus){
+            .header__links li a:is(:hover, :focus){
                 color: #bd2323; }
         @media only screen and (max-width: 37.5em) {
           header{
@@ -175,26 +175,27 @@ header{
               display: block; }
               .ham__menu-bar{
                 color: #f9c004; }
-            header ul{
-              display: none;
+            .header__links{
+              display: block;
               position: absolute;
               background: #000;
-              top: 7rem;
+              top: 100%;
               opacity: 0;
-              transition: all 0.3s;
+              visibility: hidden;
+              transition: all 1s;
               left: 0;
               width: 100%;}
-              header ul li{
+              .header__links li{
                 width: 100%;
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
                 padding: 0; }
-                header ul li a{
+                .header__links li a{
                   display: block;
                   justify-content: stretch;
                   text-align: center;}
             .ul__show{
               opacity: 1;
-              display: block;
+              visibility: visible;
             } }
 
 .home__section{
