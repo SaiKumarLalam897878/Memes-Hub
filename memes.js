@@ -16,3 +16,10 @@ hamMenu.addEventListener("click", () => {
     hamMenuBar.classList.toggle('fa-xmark');
     headerUl.classList.toggle("ul__show");
 })
+
+for (let i = 0; i < headerLinks.length; i++){
+    headerLinks[i].addEventListener('click', () => {
+        hamMenuBar.classList.toggle("fa-xmark");
+        headerUl.classList.toggle('ul__show');
+    })
+}

@@ -193,6 +193,11 @@ header{
     background-size: cover;
     background-position: center;
     width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .home__section{
+        top: 5rem;
+      }
+    }
     .home__logo{
         display: flex;
         flex-direction: column;
