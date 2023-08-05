@@ -31,6 +31,7 @@ for (let i = 0; i < headerLinks.length; i++){
 const menuSpecial1 = document.getElementById('menuSpecial1');
 const menuSpecial2 = document.getElementById('menuSpecial2');
 const menuSpecial3 = document.getElementById('menuSpecial3');
+const arrow = document.querySelector('.arrow');
 
 menuSpecial1.classList.add('border-bottom');
 
@@ -38,16 +39,25 @@ menuSpecial1.addEventListener("click", () => {
     menuSpecial1.classList.add('border-bottom');
     menuSpecial2.classList.remove('border-bottom');
     menuSpecial3.classList.remove('border-bottom');
+
+    arrow.classList.remove('arrow_2', 'arrow_3');
+    arrow.classList.add('arrow_1');
 })
 
 menuSpecial2.addEventListener("click", () => {
     menuSpecial1.classList.remove('border-bottom');
     menuSpecial2.classList.add('border-bottom');
     menuSpecial3.classList.remove('border-bottom');
+
+    arrow.classList.remove('arrow_1', 'arrow_3');
+    arrow.classList.add('arrow_2');
 })
 
 menuSpecial3.addEventListener("click", () => {
     menuSpecial1.classList.remove('border-bottom');
     menuSpecial2.classList.remove('border-bottom');
     menuSpecial3.classList.add('border-bottom');
+
+    arrow.classList.remove('arrow_1', 'arrow_2');
+    arrow.classList.add('arrow_3');
 })

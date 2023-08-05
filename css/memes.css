@@ -29,6 +29,9 @@
   html {
     font-size: 62.5%;
     scroll-behavior: smooth; }
+    @media only screen and (max-width: 37.5em) {
+      html {
+        font-size: 50%;} }
     @media only screen and (max-width: 75em) {
       html {
         font-size: 57.5%; } }
@@ -382,8 +385,25 @@ header{
     display: flex;
     margin-top: 2rem;
     padding-bottom: .7rem;
+    position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     gap: 3rem;}
+    .arrow{
+      width: 2rem;
+      height: 2rem;
+      background-color: #fff;
+      position: absolute;
+      rotate: 45deg;
+      top: 8.4rem;
+      transition: all 0.3s;
+      border-radius: .2rem; }
+      .arrow_1{
+        left: 14%; }
+      .arrow_2{
+        left: 50.5%; }
+      .arrow_3{
+        left: 84%;
+      }
     .menu__special{
       display: flex;
       justify-content: center;
@@ -424,25 +444,26 @@ header{
         }
   .menu__bar-section-1{
     background: #fff;
-    display: flex;
-    gap: 3.5rem;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
     padding: 2rem;
     border-radius: .4rem;
     margin-top: 3rem; }
-    .arrow{
-      width: 2rem;
-      height: 2rem;
-      background-color: #fff;
-      position: absolute;
-      rotate: 45deg;
-      top: -.9rem;
-      left: 30rem;
-      border-radius: .2rem;
+    @media only screen and (max-width: 48.5em) {
+      .menu__bar-section-1{
+        grid-template-columns: 1fr;
+      }
     }
     .food__item-part{
       border-right: 1px solid rgba(0, 0, 0, 0.5);
-      padding-right: 3.5rem; }
+      padding-right: 2.5rem; }
+      @media only screen and (max-width: 48.5em) {
+        .food__item-part{
+          border-right: none;
+          padding-right: 0;
+        }
+      }
       .food__item{
         display: flex;
         align-items: center;
