@@ -23,3 +23,28 @@ for (let i = 0; i < headerLinks.length; i++){
         headerUl.classList.toggle('ul__show');
     })
 }
+
+
+
+//
+const menuSpecial1 = document.getElementById('menuSpecial1');
+const menuSpecial2 = document.getElementById('menuSpecial2');
+const menuSpecial3 = document.getElementById('menuSpecial3');
+
+menuSpecial1.addEventListener("click", () => {
+    menuSpecial1.classList.add('border-bottom');
+    menuSpecial2.classList.remove('border-bottom');
+    menuSpecial3.classList.remove('border-bottom');
+})
+
+menuSpecial2.addEventListener("click", () => {
+    menuSpecial1.classList.remove('border-bottom');
+    menuSpecial2.classList.add('border-bottom');
+    menuSpecial3.classList.remove('border-bottom');
+})
+
+menuSpecial3.addEventListener("click", () => {
+    menuSpecial1.classList.remove('border-bottom');
+    menuSpecial2.classList.remove('border-bottom');
+    menuSpecial3.classList.add('border-bottom');
+})
