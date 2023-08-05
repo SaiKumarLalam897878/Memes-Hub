@@ -31,6 +31,8 @@ const menuSpecial1 = document.getElementById('menuSpecial1');
 const menuSpecial2 = document.getElementById('menuSpecial2');
 const menuSpecial3 = document.getElementById('menuSpecial3');
 
+menuSpecial1.classList.add('border-bottom');
+
 menuSpecial1.addEventListener("click", () => {
     menuSpecial1.classList.add('border-bottom');
     menuSpecial2.classList.remove('border-bottom');

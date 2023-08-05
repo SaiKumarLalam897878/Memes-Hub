@@ -388,6 +388,7 @@ header{
       display: flex;
       justify-content: center;
       padding: .5rem 2rem;
+      gap: .7rem;
       align-items: center;
       position: relative;
       cursor: pointer; }
@@ -435,9 +436,9 @@ header{
         display: flex;
         align-items: center;
         margin-bottom: 1.5rem;
+        gap: 1.5rem;
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-        gap: 1.5rem; }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
         .food__item:last-child{
           border:none;
           margin: 0;
