@@ -26,7 +26,8 @@ for (let i = 0; i < headerLinks.length; i++){
 
 
 
-//
+//adding menu bar background styles when it was active
+
 const menuSpecial1 = document.getElementById('menuSpecial1');
 const menuSpecial2 = document.getElementById('menuSpecial2');
 const menuSpecial3 = document.getElementById('menuSpecial3');
