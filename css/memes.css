@@ -426,9 +426,20 @@ header{
     background: #fff;
     display: flex;
     gap: 3.5rem;
+    position: relative;
     padding: 2rem;
     border-radius: .4rem;
     margin-top: 3rem; }
+    .arrow{
+      width: 2rem;
+      height: 2rem;
+      background-color: #fff;
+      position: absolute;
+      rotate: 45deg;
+      top: -.9rem;
+      left: 30rem;
+      border-radius: .2rem;
+    }
     .food__item-part{
       border-right: 1px solid rgba(0, 0, 0, 0.5);
       padding-right: 3.5rem; }
@@ -455,4 +466,3 @@ header{
             margin-bottom: .6rem;
             justify-content: space-between;
             align-items: center; }
-      
