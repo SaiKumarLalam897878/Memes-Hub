@@ -29,12 +29,12 @@
   html {
     font-size: 62.5%;
     scroll-behavior: smooth; }
-    @media only screen and (max-width: 37.5em) {
-      html {
-        font-size: 50%;} }
     @media only screen and (max-width: 75em) {
       html {
         font-size: 57.5%; } }
+    @media only screen and (max-width: 37.5em) {
+      html {
+        font-size: 50%;} }
     @media only screen and (min-width: 112.5em) {
       html {
         font-size: 65%; } }
@@ -118,7 +118,7 @@
       .section__tagline{
         font-size: 2rem; }
     .sec_pad{
-      padding: 7rem, 4rem; }
+      padding: 9.5rem 3.2rem; }
   }
   
 header{
@@ -149,8 +149,8 @@ header{
          }
         @media only screen and (max-width: 37.5em) {
             .header__logo{
-                width: 5rem;
-                height: 2.8rem; } }
+                width: 5.5rem;
+                height: 3.1rem; } }
                 .header__logo-a{
                     padding: 0;
                     line-height: 0; }
@@ -183,12 +183,12 @@ header{
           header{
             justify-content: space-between;
             background: #000;
-            padding: 3.5rem 2.2rem;
-            height: 5rem;}
+            padding: 2.5rem 3.5rem;}
             .small__device,
             .ham__menu{
               display: block; }
               .ham__menu-bar{
+                font-size: 2.5rem;
                 color: #f9c004; }
             .header__links{
               display: block;
@@ -388,6 +388,13 @@ header{
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     gap: 3rem;}
+    @media only screen and (max-width: 37.5em) {
+      .menu__bar{
+        gap: 0.5rem;
+        width: 41rem; }
+      .fas{
+        font-size: 2.5rem;}
+    }
     .arrow{
       width: 2rem;
       height: 2rem;
@@ -404,30 +411,46 @@ header{
       .arrow_3{
         left: 84%;
       }
+      @media only screen and (max-width: 37.5em) {
+        .arrow_1{
+          left: 16%;
+        }
+        .arrow_2{
+          left: 50%;
+        }
+        .arrow_3{
+          left: 82%;
+        }
+      }
     .menu__special{
       display: flex;
       justify-content: center;
-      padding: .5rem 2rem;
-      gap: .7rem;
+      padding: .5em 2em;
+      gap: .7em;
       align-items: center;
       position: relative;
       cursor: pointer; }
       .menu__special::after{
         content: "";
         position:absolute;
-        height: .25rem;
+        height: .25em;
         background: #000;
         width: 0;
         left: 0;
         transition: all 0.3s;
-        bottom: -.7rem; }
+        bottom: -.7em; }
         .menu__special:hover::after{
           width: 100%;
+        }
+        @media only screen and (max-width: 37.5em) {
+          .menu__special svg{
+            width: 23px;
+          }
         }
     .border-bottom{
       display: flex;
       background: rgba(255, 255, 255, .3);
-      border-radius: .4rem;
+      border-radius: .4em;
       animation: menuBorder .3s ease; }
     .border-bottom::after{
       width: 100%; }
@@ -437,7 +460,7 @@ header{
     }
       .menu__para,
       .menu__para-bold{
-        font-size: 1.5rem;
+        font-size: 1.5em;
         font-family: "Poppins", sans-serif; }
         .menu__para-bold{
           font-weight: bold;
