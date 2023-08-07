@@ -540,7 +540,7 @@ header{
       .main-footer__row-1 {
         margin-bottom: 5rem; } }
   .main-footer__row-2 {
-    width: 40%;
+    width: 70%;
     order: 1;
     max-width: 50rem; }
     @media only screen and (max-width: 56.25em) {
