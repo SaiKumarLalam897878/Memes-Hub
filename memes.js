@@ -76,3 +76,12 @@ menuSpecial3.addEventListener("click", () => {
     menuBarSection2.classList.add('d-none');
     menuBarSection3.classList.remove('d-none');
 })
+
+
+//booking section date time
+const datetimeInput = document.getElementById('datetime');
+datetimeInput.addEventListener('click', () => {
+    const now = new Date();
+    const formattedDatetime = now.toISOString().slice(0, 16);
+    datetimeInput.value = formattedDatetime;
+});

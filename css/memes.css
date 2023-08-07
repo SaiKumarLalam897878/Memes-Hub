@@ -575,3 +575,96 @@ header{
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
         padding: 3.5rem 0; } }
+
+.booking__container{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 49rem;
+  grid-gap: 1rem; }
+  .booking__image{
+    border-radius: .5rem;
+    height: 49rem;
+    box-shadow: 0 10px 50px  rgba(0, 0, 0, 0.2);
+    width: min(95%, 80rem); }
+    .booking__image-img{
+      width: 100%;
+      height: 100%;
+      border-radius: .5rem;
+      object-fit: cover; }
+  @media only screen and (max-width:78em) {
+    .booking__container{
+      height: 100%;
+      grid-template-columns: 1fr; } }
+      @media only screen and (max-width: 37.5em) {
+        .booking__image{
+          height: 28rem;
+        }
+      }
+  .booking__form-container {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 4rem;
+    width: min(80rem, 95%);
+    text-align: right;
+    border-radius: 5px; }
+    @media only screen and (max-width: 38.5em) {
+      .booking__form-container {
+        padding: 3rem; } }
+  .booking__form-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem; }
+  .booking__form-input {
+    color: #333;
+    padding: 1.5rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+    /* Code for Modern Browsers */
+    /* Code for WebKit, Blink, Edge */
+    /* Code for Internet Explorer 10-11 */
+    /* Code for Microsoft Edge */
+    /* Code for Mozilla Firefox 4 to 18 */
+    /* Code for Mozilla Firefox 19+ */ }
+    .booking__form-input::placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.3rem; }
+    .booking__form-input::-webkit-input-placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.3rem; }
+    .booking__form-input:-ms-input-placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.3rem; }
+    .booking__form-input::-ms-input-placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.3rem; }
+    .booking__form-input:-moz-placeholder {
+      opacity: 1;
+      color: #999;
+      font-weight: 600;
+      font-size: 1.3rem; }
+    .booking__form-input::-moz-placeholder {
+      opacity: 1;
+      color: #999;
+      font-weight: 600;
+      font-size: 1.3rem; 
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .booking__form-container form .btn{
+      margin-top: 2rem;
+    }
