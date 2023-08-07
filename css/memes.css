@@ -410,18 +410,14 @@ header{
       .arrow_2{
         left: 50.5%; }
       .arrow_3{
-        left: 84%;
-      }
+        left: 84%; }
       @media only screen and (max-width: 37.5em) {
         .arrow_1{
-          left: 16%;
-        }
+          left: 16%; }
         .arrow_2{
-          left: 50%;
-        }
+          left: 50%; }
         .arrow_3{
-          left: 82%;
-        }
+          left: 82%; }
       }
     .menu__special{
       display: flex;
@@ -441,12 +437,10 @@ header{
         transition: all 0.3s;
         bottom: -.7em; }
         .menu__special:hover::after{
-          width: 100%;
-        }
+          width: 100%; }
         @media only screen and (max-width: 37.5em) {
           .menu__special svg{
-            width: 23px;
-          }
+            width: 23px; }
         }
     .border-bottom{
       display: flex;
@@ -464,9 +458,8 @@ header{
         font-size: 1.5em;
         font-family: "Poppins", sans-serif; }
         .menu__para-bold{
-          font-weight: bold;
-        }
-  .menu__bar-section-1{
+          font-weight: bold; }
+  .menu__bar-section{
     background: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -474,11 +467,12 @@ header{
     padding: 2rem;
     border-radius: .4rem;
     margin-top: 3rem; }
+    .d-none{
+      display: none; }
     @media only screen and (max-width: 48.5em) {
-      .menu__bar-section-1{
+      .menu__bar-section{
         grid-template-columns: 1fr;
-        grid-gap: 0;
-      }
+        grid-gap: 0; }
     }
     .food__item-part{
       border-right: 1px solid rgba(0, 0, 0, 0.5);
@@ -505,8 +499,7 @@ header{
           .food__item-part2 .food__item:last-child{
             border: none;
             margin: 0;
-            padding: 0;
-          }
+            padding: 0; }
         }
         .food__item-img{
           width: 10rem;

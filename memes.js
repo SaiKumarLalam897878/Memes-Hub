@@ -32,6 +32,9 @@ const menuSpecial1 = document.getElementById('menuSpecial1');
 const menuSpecial2 = document.getElementById('menuSpecial2');
 const menuSpecial3 = document.getElementById('menuSpecial3');
 const arrow = document.querySelector('.arrow');
+const menuBarSection1 = document.getElementById('menuBarSection1');
+const menuBarSection2 = document.getElementById('menuBarSection2');
+const menuBarSection13 = document.getElementById('menuBarSection3');
 
 menuSpecial1.classList.add('border-bottom');
 
@@ -42,6 +45,10 @@ menuSpecial1.addEventListener("click", () => {
 
     arrow.classList.remove('arrow_2', 'arrow_3');
     arrow.classList.add('arrow_1');
+
+    menuBarSection1.classList.remove('d-none');
+    menuBarSection2.classList.add('d-none');
+    menuBarSection3.classList.add('d-none');
 })
 
 menuSpecial2.addEventListener("click", () => {
@@ -51,6 +58,10 @@ menuSpecial2.addEventListener("click", () => {
 
     arrow.classList.remove('arrow_1', 'arrow_3');
     arrow.classList.add('arrow_2');
+
+    menuBarSection1.classList.add('d-none');
+    menuBarSection2.classList.remove('d-none');
+    menuBarSection3.classList.add('d-none');
 })
 
 menuSpecial3.addEventListener("click", () => {
@@ -60,4 +71,8 @@ menuSpecial3.addEventListener("click", () => {
 
     arrow.classList.remove('arrow_1', 'arrow_2');
     arrow.classList.add('arrow_3');
+
+    menuBarSection1.classList.add('d-none');
+    menuBarSection2.classList.add('d-none');
+    menuBarSection3.classList.remove('d-none');
 })
