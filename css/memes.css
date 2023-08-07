@@ -72,7 +72,7 @@
     resize: none; }
   .btn{
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #fff;
     height: 3.5rem;
@@ -116,7 +116,7 @@
     .primary__heading{
       font-size: 2.5rem; }
       .section__tagline{
-        font-size: 2rem; }
+        font-size: 2.25rem; }
     .sec_pad{
       padding: 9.5rem 3.2rem; }
   }
@@ -513,3 +513,65 @@ header{
             margin-bottom: .6rem;
             justify-content: space-between;
             align-items: center; }
+
+.footer__section {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem 9rem;
+  color: #fff;}
+  @media only screen and (max-width: 37.5em) {
+    .footer__section{
+      padding: 2rem 5rem; }
+  }
+  .main-footer__upper {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 8rem 0; }
+    @media only screen and (max-width: 56.25em) {
+      .main-footer__upper {
+        padding: 6rem 0; } }
+    @media only screen and (max-width: 38.5em) {
+      .main-footer__upper {
+        display: block; } }
+  .main-footer__row-1 {
+    order: 2; }
+    @media only screen and (max-width: 56.25em) {
+      .main-footer__row-1 {
+        margin-bottom: 5rem; } }
+  .main-footer__row-2 {
+    width: 40%;
+    order: 1;
+    max-width: 50rem; }
+    @media only screen and (max-width: 56.25em) {
+      .main-footer__row-2 {
+        width: 100%; } }
+  .footer__heading{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2.4rem;
+    font-family: "Bebas Neue", sans-serif;}
+  .main-footer__short-desc {
+    margin-top: 2rem;
+    color: #eee;
+    font-size: 1.5rem;
+    line-height: 1.7; }
+  .main-footer__social-cont {
+    margin-top: 2rem; }
+  .main-footer__icon {
+    margin-right: 1rem;
+    width: 2.5rem; }
+    .main-footer__icon--mr-none {
+      margin-right: 0; }
+  .main-footer__lower {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: center; }
+    .main-footer__lower a {
+      text-decoration: underline;
+      font-weight: bold;
+      margin-left: 2px; }
+    @media only screen and (max-width: 56.25em) {
+      .main-footer__lower {
+        padding: 3.5rem 0; } }
