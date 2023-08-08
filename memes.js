@@ -1,5 +1,5 @@
 // navbar header background color visible after scroll down
-const showNavbar = document.querySelector(".navbar");
+const showNavbar = document.querySelector(".navbar_section");
 window.addEventListener('scroll', () => {
     showNavbar.classList.toggle('show__background', window.scrollY > 100);
 });
@@ -85,3 +85,19 @@ datetimeInput.addEventListener('click', () => {
     const formattedDatetime = now.toISOString().slice(0, 16);
     datetimeInput.value = formattedDatetime;
 });
+
+//carousel section for small devices
+var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    autoplay: true,
+    // autoHeight: true,
+    pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+    }
+  });

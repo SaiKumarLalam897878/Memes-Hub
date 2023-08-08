@@ -521,13 +521,22 @@ header{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
+  position: relative; } 
+  .booking__svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2; }
+  .booking__svg svg{
+    object-fit: cover;
+    width: 100%;
+  }
   .booking__container{
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     justify-items: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     height: 49rem;
     grid-gap: 1rem; }
     .booking__image{
@@ -617,6 +626,153 @@ header{
       .booking__form-container form .btn{
         margin-top: 2rem;
       }
+
+.carousel-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .carousel-sm .booking__svg{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    z-index: 0;
+    width: 100%;
+    height: 100%; }
+
+  .blog-slider {
+    width: 95%;
+    height: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    width: min(93%, 800px);
+    margin-top: 11.5rem;
+    background: #f9c004;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 25px;
+    border-radius: .5rem;
+    transition: all .3s; }
+      .blog-slider__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .blog-slider__item.swiper-slide-active .blog-slider__img img {
+          opacity: 1;}
+        .blog-slider__item.swiper-slide-active .blog-slider__content > * {
+          opacity: 1;
+          transform: none; }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(1) {
+            transition-delay: 0.3s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(2) {
+            transition-delay: 0.4s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(3) {
+            transition-delay: 0.5s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(4) {
+            transition-delay: 0.6s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(5) {
+            transition-delay: 0.7s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(6) {
+            transition-delay: 0.8s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(7) {
+            transition-delay: 0.9s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(8) {
+            transition-delay: 1s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(9) {
+            transition-delay: 1.1s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(10) {
+            transition-delay: 1.2s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(11) {
+            transition-delay: 1.3s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(12) {
+            transition-delay: 1.4s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(13) {
+            transition-delay: 1.5s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(14) {
+            transition-delay: 1.6s;
+          }
+          .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(15) {
+            transition-delay: 1.7s;
+          }
+            .blog-slider__img {
+              width: 23rem;
+              height: 23rem;
+              flex-shrink: 0;
+              box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+              border-radius: .5rem;
+              transform: translate(0, -50%);
+              overflow: hidden; }
+              .blog-slider__img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                opacity: 0;
+                border-radius: .5rem;
+                transition: all .3s; }
+            .blog-slider__content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              line-height: 10px; }
+              .blog-slider__content > * {
+                opacity: 0;
+                transition: all .4s; }
+                .blog-slider__code {
+                  color: #7b7992;
+                  margin-bottom: 15px;
+                  display: block;
+                  font-weight: 500; }
+                .blog-slider__title {
+                  font-size: 24px;
+                  font-weight: 700;
+                  color: #0d0925;
+                  margin-bottom: 20px; }
+                .blog-slider__text {
+                  color: #4e4a67;
+                  margin-bottom: 30px;
+                  text-align: center;
+                  line-height: 1.5em; }
+                .blog-slider__button {
+                  background-color: #000;
+                  margin: 0;
+                  color: #fff;
+                  box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.3); }
+      .blog-slider__pagination {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8rem; }
+        .blog-slider__pagination .swiper-pagination-bullet {
+          width: 11px;
+          height: 11px;
+          display: block;
+          border-radius: 10px;
+          background: #062744;
+          opacity: 0.2;
+          transition: all .3s; }
+          .blog-slider__pagination .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #000;
+            height: 11px;
+            width: 30px;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
 
 .footer__section {
   background: #000;
