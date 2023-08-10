@@ -296,18 +296,35 @@ header{
             background-color: #fff; }
             .service__card:nth-child(4){
                 background-color: #f9c004; }
-            /* .food__truck-div{
+              .chef__div{
+                position: relative;
+                animation: chef 3s infinite;
+                text-align: center;
+                width: 4.1rem;}
+                @keyframes chef {
+                  0%, 100%{
+                    transform: scaleX(1); }
+                  50%{
+                    transform: scaleX(1.12); }
+                }
+            .food__truck-div{
               overflow: hidden;
-              width: 40%; }
+              width: 55%; }
               .food__truck{
                 left: 0;
                 position: relative;
                 animation: truck 3s infinite; }
                 @keyframes truck {
                   0%{
-                    left: -40%;}
+                    left: 0;}
+                  50%{
+                    left: 67%;
+                    transform: scaleX(1); }
+                  51%{
+                    transform: scaleX(-1); }
                   100%{
-                    left: 120%;} } */
+                    transform: scaleX(-1); }
+                }
 
 .about__section{
   background: #fff;}
