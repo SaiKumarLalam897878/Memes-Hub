@@ -320,7 +320,7 @@ header{
                   50%{
                     left: 67%;
                     transform: scaleX(1); }
-                  51%{
+                  50.1%{
                     transform: scaleX(-1); }
                   100%{
                     transform: scaleX(-1); }
