@@ -860,9 +860,13 @@ header{
     margin-top: 2rem; }
   .main-footer__icon {
     margin-right: 1rem;
+    transition: all .3s;
     width: 2.5rem; }
     .main-footer__icon--mr-none {
       margin-right: 0; }
+      .main-footer__icon:hover{
+        transform: translateY(-.7rem);
+      }
   .main-footer__lower {
     padding: 4rem 0;
     border-top: 1px solid #444;
