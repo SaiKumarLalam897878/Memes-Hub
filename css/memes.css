@@ -167,17 +167,17 @@ header{
             font-family: "Bebas Neue", sans-serif;
             padding: 2rem 0;
             text-transform: uppercase; }
-            .header__logo-list,
-            .header__logo-a{
-              padding: 0; }
-            .header__links li a{
+            .header__links li .header__link{
                 color: #f9c004;
                 transition: color 0.3s;
                 letter-spacing: 2px;
-                padding: 2rem 0;
+                padding: 3rem 4rem;
                 font-size: 1.6rem;
                 text-shadow: 0 10px 10px black; }
-            .header__links li a:is(:hover, :focus){
+                .header__logo-list,
+                .header__logo-a{
+                  padding: 2rem 0; }
+            .header__links li .header__link:is(:hover, :focus){
                 color: #bd2323; }
         @media only screen and (max-width: 37.5em) {
           header{
