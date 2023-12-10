@@ -81,7 +81,10 @@ menuSpecial3.addEventListener("click", () => {
 //booking section date time
 const datetimeInput = document.getElementById('datetime');
 datetimeInput.addEventListener('click', () => {
-    const now = new Date();
+    const now = new Date() ;
+    now.setHours(now.getHours() + 5);
+    now.setMinutes(now.getMinutes() + 30);
+    
     const formattedDatetime = now.toISOString().slice(0, 16);
     datetimeInput.value = formattedDatetime;
 });
